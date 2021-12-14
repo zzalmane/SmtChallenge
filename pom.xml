@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.smaato.challenge</groupId>
 	<artifactId>SmaatoDemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>SmaatoDemo</name>
 	<description>Smaato challenge</description>
 	<properties>
@@ -20,12 +20,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 		<dependency>
