@@ -17,6 +17,11 @@ $ java -jar jar/SmaatoDemo-1.0.jar (the jar is inside the jar folder)
 ##### Using Maven plugin
 The Spring Boot Maven plugin includes a run goal which can be used to quickly compile and run your application.
 
+### Testing URL:
+
+http://localhost:8080/api/smaato/accept/333/?endpoint=https://reqbin.com/echo/post/json
+
+
 $ mvn spring-boot:run
 
 # Extension 1
