@@ -5,7 +5,7 @@ Then we will have a non-blocking API that can be faster with an important amount
 With this approach we have to have in mind that all our code must be non-blocking, including logging.
 
 ## Running the App
-
+The challenge logs will be written in /logs/count-service.log file.
 #### Running from an IDE
 You can run a Spring Boot application from your IDE as a simple Java application, however, first you will need to import your project. Import steps will vary depending on your IDE and build system.
 
