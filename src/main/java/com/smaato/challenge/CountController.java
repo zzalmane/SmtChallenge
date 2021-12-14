@@ -55,14 +55,14 @@ public class CountController extends RuntimeException {
         idCounter = new HashSet<>();
     }
 
-    public void processGetRequest(WebClient webClient, String endpoint, int id){
-        Mono<ClientResponse> response= webClient.get().uri(endpoint+"/"+id)
+    public void processGetRequest(WebClient webClient, String endpoint, int counter){
+        Mono<ClientResponse> response= webClient.get().uri(endpoint+"/"+counter)
                 .exchange();
         response.subscribe(res -> log.info("HTTP status code of the response to: "+endpoint+" :"+ res.statusCode()));
 
     }
-    public void processPostRequest(WebClient webClient, String endpoint, int id){
-        Mono<ClientResponse> response= webClient.post().uri(endpoint).body(Mono.just(id), Integer.class)
+    public void processPostRequest(WebClient webClient, String endpoint, int counter){
+        Mono<ClientResponse> response= webClient.post().uri(endpoint).body(Mono.just(counter), Integer.class)
                 .exchange();
         response.subscribe(res -> log.info("HTTP status code of the response to: "+endpoint+" :"+ res.statusCode()));
 
