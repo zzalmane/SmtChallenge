@@ -4,6 +4,21 @@ Then we will have a non-blocking API that can be faster with an important amount
 
 With this approach we have to have in mind that all our code must be non-blocking, including logging.
 
+## Running the App
+
+#### Running from an IDE
+You can run a Spring Boot application from your IDE as a simple Java application, however, first you will need to import your project. Import steps will vary depending on your IDE and build system.
+
+After importing the project you can go to the "src/main/java/com/smaato/challenge/SmaatoDemoApplication" java class and run it.
+##### Running as a packaged application
+Create an executable jar with Maven (mvn clean install) and run the application :
+
+$ java -jar jar/SmaatoDemo-1.0.jar (the jar is inside the jar folder)
+##### Using Maven plugin
+The Spring Boot Maven plugin includes a run goal which can be used to quickly compile and run your application.
+
+$ mvn spring-boot:run
+
 # Extension 1
 
 A call for the POST request was implemennted, you can comment/uncomment one of the lines in CountController.java
