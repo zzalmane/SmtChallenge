@@ -19,3 +19,8 @@ processGetRequest(webClient,endpoint.get(),idCounter.size());
 This point is complicated without a centralized logging solution like EFK or ELK, with a load balancer we will not be able to process the request inside the service and make that the deduplication works, instead of that we can use Fluentd or Logstash and then export the result to ElasticSerch, it's a possible solution that I can't implement for the challenge, it's complicated and may need more time and dedication. 
 
 # Extension 1
+
+The point is not clear, if the idea is to publish the count to a streaming service or messaging system? we can use Spring Cloud Stream and then and then send the message to a topic in Kafck or RabbitMQ.
+
+There are different approaches that can be specified depending on the real needs.
+
