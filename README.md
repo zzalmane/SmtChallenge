@@ -19,7 +19,8 @@ The Spring Boot Maven plugin includes a run goal which can be used to quickly co
 
 ### Testing URL:
 
-http://localhost:8080/api/smaato/accept/333/?endpoint=https://reqbin.com/echo/post/json
+http://localhost:8080/api/smaato/accept/333/?endpoint=https://gorest.co.in/public/v1/users/
+
 
 
 $ mvn spring-boot:run
