@@ -43,7 +43,7 @@ This point is complicated without a centralized logging solution like EFK or ELK
 
 # Extension 3
 
-The point is not clear, if the idea is to publish the count to a streaming service or messaging system? We can use Spring Cloud Stream and then send the message to a topic in Kafka or RabbitMQ.
+The point is not clear, if the idea is to publish the count to a streaming service or messaging system? We can use Spring Cloud Stream and then send the message to a topic in Pub/Sub, Kafka, or RabbitMQ, eetc ...
 
 There are different approaches that can be specified depending on the real needs.
 
